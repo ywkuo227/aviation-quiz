@@ -25,15 +25,15 @@ main {
 }
 
 section {
-    width: 400px;
+    width: 45%;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
-p, button {
-    font-size: 15px;
+header, p, button {
+    font-size: 20px;
 }
 
 p {
@@ -42,8 +42,24 @@ p {
 
 button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 7.5px;
     color: white;
     background-color: purple;
+    border-radius: 12.5px;
+}
 
+@media screen and (max-width: 1200px) {
+
+    section {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+
+    section {
+        width: 75%;
+    }
+    
 }
