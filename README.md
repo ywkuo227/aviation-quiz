@@ -1,2 +1,2 @@
-# javascript-quiz
-A simple timed JavaScript quiz.
+# avation-quiz
+A simple timed Aviation quiz.
