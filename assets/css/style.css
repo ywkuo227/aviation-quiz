@@ -33,8 +33,12 @@ h1 {
     font-size: 25px;
 }
 
-header, p, button {
+header, p, form, button {
     font-size: 20px;
+}
+
+button:hover {
+    opacity: 75%;
 }
 
 p {
@@ -61,6 +65,8 @@ p {
 }
 
 .clsChoice {
+    display: flex;
+    flex-direction: column;
     margin-top: 4px;
     padding: 7.5px;
     color: white;
@@ -73,6 +79,33 @@ p {
     display: none;
     font-style: italic;
     color: grey;
+}
+
+#idUserInput {
+    display: none;
+    text-align: left;
+}
+
+#idUserInput form {
+    margin-top: 20px;
+}
+
+#userInitial {
+    font-size: 20px;
+    height: 35px;
+}
+
+#idSubmitBtn {
+    padding: 7.5px;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 20px;
+}
+
+#idSubmitBtn:hover {
+    opacity: 75%;
 }
 
 @media screen and (max-width: 1200px) {

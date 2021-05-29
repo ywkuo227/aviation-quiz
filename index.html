@@ -24,10 +24,22 @@
 
         <section id="idQueSec">
             <h1 id="idQuestion"></h1>
-            <ul id="idChoices"></ul>
+            <div id="idChoices"></div>
             <div id="idResponseDisplay">
                 <hr>
                 <p id="idResponse"></p>
+            </div>
+        </section>
+
+        <section id="idUserInput">
+            <h1>All Done!</h1>
+            <div id="idChoices">
+                <p>Your final score is <span id="idScore"></span>.</p>
+                <form action="highscore.html">
+                    <label for="userInitial">Enter initials:</label>
+                    <input type="text" id="userInitial">
+                    <input type="submit" value="Submit" id="idSubmitBtn">
+                </form>
             </div>
         </section>
 
