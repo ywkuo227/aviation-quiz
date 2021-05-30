@@ -1,3 +1,4 @@
+/* Global style, setting no margin and padding for the entire page. Set font family for the pages. */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Set the header of the page as flexbox and its space between its contents.
+Margin top 10px and padding of 5px to left and right. */
 header {
     display: flex;
     justify-content: space-between;
@@ -12,11 +15,14 @@ header {
     padding: 0 5px 0 5px;
 }
 
+/* Remove the underline for "View Highscores" link and set the font color to purple. */
 a {
     text-decoration: none;
     color: purple;
 }
 
+/* Setting Main section as flexbox and the sub-sections in the main section as column.
+Align everything to center. 25px of margin at the top */
 main {
     display: flex;
     flex-direction: column;
@@ -25,26 +31,32 @@ main {
     margin-top: 50px;
 }
 
+/* Set the width of the sub-sections to 45% of the browser width. */
 section {
     width: 45%;
 }
 
+/* Header of the sub-sections with font size 25px. */
 h1 {
     font-size: 25px;
 }
 
-header, p, form, button {
+/* Setting the font size for the below element and clas to 20px. */
+header, p, form, .clsScores, button {
     font-size: 20px;
 }
 
+/* When hovering above buttons, set the opacity to 75%. */
 button:hover {
     opacity: 75%;
 }
 
+/* 20px of margin top for any paragraph. */
 p {
     margin-top: 20px;
 }
 
+/* Set the style for the Start Quiz button. */
 #idBtnStartQuiz {
     margin-top: 20px;
     padding: 7.5px;
@@ -54,16 +66,18 @@ p {
     border-width: 1px;
 }
 
+/* Hide the Question Section at start and align text to left. */
 #idQueSec {
     display: none;
     text-align: left;
 }
 
+/* Set margins to the top and bottom of the Choices section. */
 #idChoices {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
 
+/* Set the style for each of the multiple choice buttons. */
 .clsChoice {
     display: flex;
     flex-direction: column;
@@ -75,26 +89,31 @@ p {
     border-width: 1px;
 }
 
+/* Hide the Response Display at start. Font style is italic and color is grey. */
 #idResponseDisplay {
     display: none;
     font-style: italic;
     color: grey;
 }
 
+/* Hide the User Input section at start. Align text to left. */
 #idUserInput {
     display: none;
     text-align: left;
 }
 
+/* Create a 20px margin at the top of the form for user input. */
 #idUserInput form {
     margin-top: 20px;
 }
 
+/* The font size inside the User Initial textbox will be 20px. The height of the textbox is 35px */
 #userInitial {
     font-size: 20px;
     height: 35px;
 }
 
+/* Setting the styles for Submit button in the User Input section. */
 #idSubmitBtn {
     padding: 7.5px;
     color: white;
@@ -104,10 +123,47 @@ p {
     font-size: 20px;
 }
 
+/* When hover above the Submit button, set the opacity to 75%. */
 #idSubmitBtn:hover {
     opacity: 75%;
 }
 
+/* Reset the top side margin for the main content section of the high score page, then set it to 75px*/
+#idHiScorMain {
+    margin-top: 0;
+    margin-top: 75px;
+}
+
+/* Align the text of the high score section to the left. */
+#idHiScorSec {
+    text-align: left;
+}
+
+/* Set a 20px top margin to the div inside the high score section. */
+#idHiScorSec div {
+    margin-top: 20px;
+}
+
+/* Set styles for the list of top scores. */
+.clsScores {
+    margin-top: 4px;
+    padding: 7.5px;
+    color: white;
+    background-color: rgb(184, 113, 184);
+    border-radius: 5px;
+}
+
+/* Set the styples for the buttons in the high score section (Go Back and Clear Highscores). */
+#idHiScorSec button {
+    margin-top: 20px;
+    padding: 7.5px;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+/* Reproportion the width of the sub-sections for small screen devices. */
 @media screen and (max-width: 1200px) {
 
     section {
@@ -116,6 +172,7 @@ p {
     
 }
 
+/* Reproportion the width of the sub-sections for mobile device. */
 @media screen and (max-width: 900px) {
 
     section {

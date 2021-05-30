@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz - High Scores</title>
+    <title>Aviation Quiz - High Scores</title>
+    <!-- List of Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <!-- Main content -->
+    <main id="idHiScorMain">
+        <!-- Section to show highest scores (on local machine). -->
+        <section id="idHiScorSec">
+            <h1>Highscores</h1>
+            <div>
+                <ul id="idScoreList"></ul>
+            </div>
+            <!-- Buttons to go back to previous page or to clear score history. -->
+            <button onclick="javascript:history.back()">Go Back</button>
+            <button id="idClrHiScorBtn">Clear Highscores</button>
+        </section>
+    </main>
+    <!-- Script -->
+    <script src="./assets/js/scptHiScr.js"></script>
 </body>
 </html>

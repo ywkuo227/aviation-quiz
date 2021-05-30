@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviation Quiz</title>
+    <!-- Link to stylesheets -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- Header section to display View Highscore link and time remain. -->
     <header>
         <a href="highscore.html">View Highscores</a>
         <div>Time: <span id="idTimer"></span></div>
     </header>
+    <!-- Main content section -->
     <main>
+        <!-- Intro section -->
         <section id="idIntroSec">
             <h1>Aviation Chellenges</h1>
             <p>
@@ -21,7 +25,7 @@
             </p>
             <button id="idBtnStartQuiz">Start Quiz</button>
         </section>
-
+        <!-- Question section -->
         <section id="idQueSec">
             <h1 id="idQuestion"></h1>
             <div id="idChoices"></div>
@@ -30,7 +34,7 @@
                 <p id="idResponse"></p>
             </div>
         </section>
-
+        <!-- User Input section -->
         <section id="idUserInput">
             <h1>All Done!</h1>
             <div id="idChoices">
@@ -42,10 +46,9 @@
                 </form>
             </div>
         </section>
-
     </main>
-
+    <!-- Scripts -->
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scptIndex.js"></script>
 </body>
 </html>
