@@ -42,7 +42,12 @@ function timerCountdown() {
         if (varTimeRemain >= 1) {
             displayTime();
             varTimeRemain--;
-        } else if (varTimeRemain === 0) {
+        } else if ((varTimeRemain === 0) || (varTimeRemain < 0)) {
+            
+            if (varTimeRemain < 0) {
+                varTimeRemain = 0;
+            }
+
             document.getElementById("idQueSec").style.display = "none";
             clearInterval(timeInterval);
             displayTime();
