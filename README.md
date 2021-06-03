@@ -1,4 +1,4 @@
-# avation-quiz
+# aviation-quiz
 
 ## Description
 This web app is a simple timed quiz regarding aviation. Once started, user will have 75 seconds to answer six questions.
